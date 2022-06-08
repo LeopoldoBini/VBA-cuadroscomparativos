@@ -1,0 +1,25 @@
+Insertar hojas con nombre
+
+Sub Array1D()
+Dim myArray1D(1To 26)As String
+DimiAs Integer
+Dim HojaNueva As Worksheet
+    For11To 26
+        myArray1D(1)=Cells(1,1)
+    Nexti
+    Fori=26 To1Step -1
+        Set HojaNueva ThisWorkbook.Worksheets.Add
+        With HojaNueva
+             .Name myArray1D(1)
+            .Range("A1")="NOMBRE CLIENTE"
+            .Range("B1")="LUGAR DE TRABAJO"
+            .Range("C1")"No. TELÉFONO"
+            .Range("D1")="CORREO ELECTRÓNICO"
+            .Range("Al:D1").Interior.Color RGB(190,190,190)
+            .Range("Al:D1").Font.Color=RGB(255,255,255)
+            .Range("Al:D1").EntireColumn.AutoFit
+        End With
+    Nexti
+End Sub
+
+-----
